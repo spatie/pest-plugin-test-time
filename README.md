@@ -7,6 +7,14 @@
 
 This [Pest](https://pestphp.com) plugin offers a function `testTime` that allows you to freeze and manipulate the current time in your tests.
 
+```php
+use function Spatie\PestPluginTestTime\testTime;
+
+testTime()->freeze(); // time will not change anymore
+
+testTime()->addMinute(); // move time forward one minute
+```
+
 ## Support us
 
 [<img src="https://github-ads.s3.eu-central-1.amazonaws.com/pest-plugin-test-time.jpg?t=1" width="419px" />](https://spatie.be/github-ad-click/pest-plugin-test-time)
@@ -32,7 +40,8 @@ composer require spatie/pest-plugin-test-time
 You can call `freeze` on the `testTime` function to freeze the current time.
 
 ```php
-use Carbon\Carbon;use function Spatie\PestPluginTestTime\testTime;
+use Carbon\Carbon;
+use function Spatie\PestPluginTestTime\testTime;
 
 testTime()->freeze(); // the current time will not change anymore
 
