@@ -1,7 +1,7 @@
 # A Pest plugin to control the flow of time
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/spatie/pest-plugin-test-time.svg?style=flat-square)](https://packagist.org/packages/spatie/pest-plugin-test-time)
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/spatie/pest-plugin-test-time/run-tests?label=tests)](https://github.com/spatie/pest-plugin-test-time/actions?query=workflow%3ATests+branch%3Amaster)
+[![Tests](https://github.com/spatie/pest-plugin-test-time/actions/workflows/run-tests.yml/badge.svg)](https://github.com/spatie/pest-plugin-test-time/actions/workflows/run-tests.yml)
 [![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/spatie/pest-plugin-test-time/Check%20&%20fix%20styling?label=code%20style)](https://github.com/spatie/pest-plugin-test-time/actions?query=workflow%3A"Check+%26+fix+styling"+branch%3Amaster)
 [![Total Downloads](https://img.shields.io/packagist/dt/spatie/pest-plugin-test-time.svg?style=flat-square)](https://packagist.org/packages/spatie/pest-plugin-test-time)
 
