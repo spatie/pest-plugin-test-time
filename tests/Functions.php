@@ -3,11 +3,23 @@
 use Carbon\Carbon;
 use function Spatie\PestPluginTestTime\testTime;
 
-it('can freeze the time', function () {
-    $format = 'Y-m-d H:i:s';
-    $time = '2021-01-01 01:23:45';
+it('can freeze the time the current time', function() {
+    testTime()->freeze();
 
-    testTime()->freeze($format, $time);
+    $timeBeforeFreezing = (new Carbon())->timestamp;
+
+    sleep(1);
+
+    $timeAfterFreezing = (new Carbon())->timestamp;
+
+    expect($timeAfterFreezing)->toEqual($timeBeforeFreezing);
+});
+
+it('can freeze the time', function () {
+    $time = '2021-01-01 01:23:45';
+    $format = 'Y-m-d H:i:s';
+
+    testTime()->freeze($time, $format);
 
     $actualTime = (new Carbon())->format($format);
 
@@ -17,7 +29,7 @@ it('can freeze the time', function () {
 it('can change the time', function () {
     $format = 'Y-m-d H:i:s';
 
-    testTime()->freeze($format, '2021-01-01 01:23:45');
+    testTime()->freeze('2021-01-01 01:23:45', $format);
 
     testTime()->addHour()->subMinute();
     $actualTime = (new Carbon())->format($format);

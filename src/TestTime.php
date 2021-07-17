@@ -8,8 +8,12 @@ use Spatie\TestTime\TestTime as BaseTestTime;
 /** @mixin BaseTestTime|\Carbon\Carbon */
 class TestTime
 {
-    public function freeze(string $format = null, $time = null): Carbon
+    public function freeze(string $time = null, string $format = 'Y-m-d H:i:s'): Carbon
     {
+        if ($time === null) {
+            $format = null;
+        }
+
         return BaseTestTime::freeze($format, $time);
     }
 
