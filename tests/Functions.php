@@ -3,7 +3,7 @@
 use Carbon\Carbon;
 use function Spatie\PestPluginTestTime\testTime;
 
-it('can freeze the time', function() {
+it('can freeze the time', function () {
     $format = 'Y-m-d H:i:s';
     $time = '2021-01-01 01:23:45';
 
@@ -14,7 +14,7 @@ it('can freeze the time', function() {
     expect($actualTime)->toBe($time);
 });
 
-it('can change the time', function() {
+it('can change the time', function () {
     $format = 'Y-m-d H:i:s';
 
     testTime()->freeze($format, '2021-01-01 01:23:45');
