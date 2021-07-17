@@ -15,28 +15,22 @@
         }
     ],
     "require": {
-        "php": "^8.0"
-    },
-    "require-dev": {
-        "friendsofphp/php-cs-fixer": "^3.0",
-        "phpunit/phpunit": "^9.5",
-        "spatie/ray": "^1.28",
-        "vimeo/psalm": "^4.8"
+        "php": "^8.0",
+        "nesbot/carbon": "^2.50",
+        "pestphp/pest": "^1.10",
+        "spatie/test-time": "^1.2"
     },
     "autoload": {
         "psr-4": {
             "Spatie\\PestPluginTestTime\\": "src"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Spatie\\PestPluginTestTime\\Tests\\": "tests"
-        }
+        },
+        "files": [
+            "src/Functions.php"
+        ]
     },
     "scripts": {
-        "psalm": "vendor/bin/psalm",
-        "test": "vendor/bin/phpunit",
-        "test-coverage": "vendor/bin/phpunit --coverage-html coverage",
+        "test": "pest",
+        "test-coverage": "vendor/bin/pest --coverage-html coverage",
         "format": "vendor/bin/php-cs-fixer fix --allow-risky=yes"
     },
     "config": {
