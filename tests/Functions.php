@@ -3,7 +3,7 @@
 use Carbon\Carbon;
 use function Spatie\PestPluginTestTime\testTime;
 
-it('can freeze the time the current time', function() {
+it('can freeze the time the current time', function () {
     testTime()->freeze();
 
     $timeBeforeFreezing = (new Carbon())->timestamp;
