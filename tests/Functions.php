@@ -7,7 +7,7 @@ it('can freeze the time', function() {
     $format = 'Y-m-d H:i:s';
     $time = '2021-01-01 01:23:45';
 
-    testTime()->add;
+    testTime()->freeze($format, $time);
 
     $actualTime = (new Carbon())->format($format);
 
