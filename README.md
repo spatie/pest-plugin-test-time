@@ -93,9 +93,9 @@ testTime()->addHour(); // time is now at '2021-01-02 13:34:56'
 testTime()->subMinute()->addSeconds(2); // time is now at '2021-01-02 13:33:58'
 ```
 
-## Expecting a carbon value
+### Expecting a carbon value
 
-It also contains a custom expectation called `toBeCarbon` to easily check the values of `Carbon` instances.
+This package offers a custom expectation called `toBeCarbon` to easily check the value of a `Carbon` instance.
 
 ```php
 $carbon = Carbon::createFromFormat('Y-m-d H:i:s', '2022-05-31 01:02:03');
