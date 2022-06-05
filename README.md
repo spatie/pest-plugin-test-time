@@ -93,7 +93,7 @@ testTime()->addHour(); // time is now at '2021-01-02 13:34:56'
 testTime()->subMinute()->addSeconds(2); // time is now at '2021-01-02 13:33:58'
 ```
 
-### Expecting a carbon value
+### Expecting a Carbon value
 
 This package offers a custom expectation called `toBeCarbon` to easily check the value of a `Carbon` instance.
 
