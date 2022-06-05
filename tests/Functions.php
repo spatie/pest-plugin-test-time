@@ -8,6 +8,7 @@ it('can freeze the time the current time', function () {
 
     $timeBeforeFreezing = (new Carbon())->timestamp;
 
+
     sleep(1);
 
     $timeAfterFreezing = (new Carbon())->timestamp;
