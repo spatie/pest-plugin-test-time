@@ -41,7 +41,7 @@ it('can change the time', function () {
     expect($actualTime)->toBe('2021-01-01 02:23:45');
 });
 
-it('can make a carbon expectation', function() {
+it('can make a carbon expectation', function () {
     $carbon = Carbon::createFromFormat('Y-m-d H:i:s', '2022-05-31 01:02:03');
 
     expect($carbon)->toBeCarbon('2022-05-31');
