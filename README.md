@@ -18,6 +18,21 @@ testTime()->freeze(); // time will not change anymore
 testTime()->addMinute(); // move time forward one minute
 ```
 
+It also contains a custom expectation called `toBeCarbon` to easily check the values of `Carbon` instances.
+
+```php
+$carbon = Carbon::createFromFormat('Y-m-d H:i:s', '2022-05-31 01:02:03');
+
+// make an expectation on the whole date, including time
+expect($carbon)->toBeCarbon('2022-05-31 01:02:03');
+
+// make an expectation on only the date part
+expect($carbon)->toBeCarbon('2022-05-31');
+
+// explicitly pass in a format
+expect($carbon)->toBeCarbon('2022', 'Y');
+```
+
 ## Support us
 
 [<img src="https://github-ads.s3.eu-central-1.amazonaws.com/pest-plugin-test-time.jpg?t=1" width="419px" />](https://spatie.be/github-ad-click/pest-plugin-test-time)
@@ -76,6 +91,23 @@ testTime()->addHour(); // time is now at '2021-01-02 13:34:56'
 
 // you can even chain method calls
 testTime()->subMinute()->addSeconds(2); // time is now at '2021-01-02 13:33:58'
+```
+
+## Expecting a carbon value
+
+It also contains a custom expectation called `toBeCarbon` to easily check the values of `Carbon` instances.
+
+```php
+$carbon = Carbon::createFromFormat('Y-m-d H:i:s', '2022-05-31 01:02:03');
+
+// make an expectation on the whole date, including time
+expect($carbon)->toBeCarbon('2022-05-31 01:02:03');
+
+// make an expectation on only the date part
+expect($carbon)->toBeCarbon('2022-05-31');
+
+// explicitly pass in a format
+expect($carbon)->toBeCarbon('2022', 'Y');
 ```
 
 ## Testing
