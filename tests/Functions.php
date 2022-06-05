@@ -52,5 +52,5 @@ it('can make a carbon expectation', function() {
     expect($carbon)->not()->toBeCarbon('2022-05-31 03:03:03');
     expect($carbon)->not()->toBeCarbon('2023', 'Y');
 
-
+    expect(null)->not()->toBeCarbon('2022-06-31');
 });

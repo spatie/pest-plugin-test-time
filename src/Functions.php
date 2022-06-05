@@ -14,5 +14,5 @@ expect()->extend('toBeCarbon', function(string $expected, string $format = null)
             : 'Y-m-d';
     }
 
-    expect($this->value->format($format))->toBe($expected);
+    expect($this->value?->format($format))->toBe($expected);
 });
