@@ -47,7 +47,7 @@ This package is a wrapper around [Carbon](https://carbon.nesbot.com/docs/)'s `se
 You can install the package via composer:
 
 ```bash
-composer require spatie/pest-plugin-test-time
+composer require spatie/pest-plugin-test-time --dev
 ```
 
 ## Usage
