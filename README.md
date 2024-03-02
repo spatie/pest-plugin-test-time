@@ -2,7 +2,6 @@
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/spatie/pest-plugin-test-time.svg?style=flat-square)](https://packagist.org/packages/spatie/pest-plugin-test-time)
 [![Tests](https://github.com/spatie/pest-plugin-test-time/actions/workflows/run-tests.yml/badge.svg)](https://github.com/spatie/pest-plugin-test-time/actions/workflows/run-tests.yml)
-[![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/spatie/pest-plugin-test-time/Check%20&%20fix%20styling?label=code%20style)](https://github.com/spatie/pest-plugin-test-time/actions?query=workflow%3A"Check+%26+fix+styling"+branch%3Amaster)
 [![Total Downloads](https://img.shields.io/packagist/dt/spatie/pest-plugin-test-time.svg?style=flat-square)](https://packagist.org/packages/spatie/pest-plugin-test-time)
 
 This [Pest](https://pestphp.com) plugin offers a function `testTime` that allows you to freeze and manipulate the current time in your tests.
