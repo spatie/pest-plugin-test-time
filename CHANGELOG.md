@@ -2,6 +2,18 @@
 
 All notable changes to `pest-plugin-test-time` will be documented in this file.
 
+## 2.2.0 - 2024-09-20
+
+### What's Changed
+
+* allow to work with pest 3 also by @mihaileu in https://github.com/spatie/pest-plugin-test-time/pull/6
+
+### New Contributors
+
+* @mihaileu made their first contribution in https://github.com/spatie/pest-plugin-test-time/pull/6
+
+**Full Changelog**: https://github.com/spatie/pest-plugin-test-time/compare/2.1.0...2.2.0
+
 ## 2.1.0 - 2024-03-02
 
 ### What's Changed
