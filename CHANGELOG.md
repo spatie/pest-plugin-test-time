@@ -2,6 +2,10 @@
 
 All notable changes to `pest-plugin-test-time` will be documented in this file.
 
+## 2.2.1 - 2025-08-24
+
+**Full Changelog**: https://github.com/spatie/pest-plugin-test-time/compare/2.2.0...2.2.1
+
 ## 2.2.0 - 2024-09-20
 
 ### What's Changed
